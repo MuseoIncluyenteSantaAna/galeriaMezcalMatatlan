@@ -68,6 +68,7 @@
 </head>
 <body>
   <h1>Información por pieza</h1>
+  <button onclick="goHome()">Home</button>
   
   <div class="gallery">
     <img src="3.jpg" alt="Imagen 1" onclick="openPopup(1)">
@@ -142,6 +143,9 @@
         var audio = new Audio(audioFile);
         audio.play();
       }
+    }
+  function goHome() {
+  window.location.href = "https://museoyieeroo.netlify.app";
     }
   </script>
 </body>
