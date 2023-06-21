@@ -92,6 +92,7 @@
  <section class="section">
     <h2>Bienvenidos a Nuestra Sala del Mecal</h2>
     <p>Santiago Matatlán es reconocido como la capital mundial del mezcal. El mezcal es fundamental en su vida económica y ceremonial, utilizado en eventos y rituales. Aunque enfrenta la problemática de la adulteración, la producción se ha regulado y se busca mejorar las ventas. El proceso de cultivo del maguey, la molienda y la maduración del mezcal son parte integral de su tradición artesanal.</p>
+    <button class="button" onclick="playAudio('mezcal')">EL MEZCAL</button>
   </section>
   
   <div id="myCarousel" class="carousel slide section" data-ride="carousel">
@@ -187,6 +188,28 @@
     <script>
     // Variables globales
     var audioElement;
+    // Función que reproduce audios
+     function playAudio(casos) {
+      if (audioElement) {
+        audioElement.pause();
+      }
+      
+      switch (casos) {
+        case 'mezcal':
+          audioElement = new Audio('audiomezcal.mp3');
+          break;
+        default:
+          return;
+      }
+      
+      audioElement.play();
+    }
+    
+    function pauseAudio() {
+      if (audioElement) {
+        audioElement.pause();
+      }
+    }
 
     // Función para abrir la ventana emergente con la información correspondiente
     function openPopup(id) {
