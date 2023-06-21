@@ -53,25 +53,7 @@
       float: right;
       margin-right: 50px;
     }
-   .section {
-      padding: 40px;
-      background-color: #333333;
-      text-align: center;
-   } 
-    .section:nth-child(even) {
-      background-color: #2a2a2a;
-    }
-    .section h2 {
-      margin-top: 0;
-      font-size: 80px;
-      font-family: 'Didot', sans-serif;
-    }
-    
-    .section p {
-      margin-bottom: 20px;
-      font-size: 20px;
-      font-family: 'Didot', sans-serif;
-    }
+
     footer {
       background-color: #111;
       color: #fff;
@@ -83,14 +65,9 @@
 </head>
 <body>
   <header>
-    <h1>Sala del Mezcal</h1>
+    <h1>Sala de Arqueología</h1>
     <a class="button" href="https://museomatatlan.netlify.app">Home</a>
   </header>
-
-  <section class="section">
-    <h2>Bienvenido a la Sala del Mezcal</h2>
-    <p>Santiago Matatlán es reconocido como la capital mundial del mezcal. El mezcal es fundamental en su vida económica y ceremonial, utilizado en eventos y rituales. Aunque enfrenta la problemática de la adulteración, la producción se ha regulado y se busca mejorar las ventas. El proceso de cultivo del maguey, la molienda y la maduración del mezcal son parte integral de su tradición artesanal.</p>
-  </section>
   
   <div id="myCarousel" class="carousel slide section" data-ride="carousel">
     <!-- Indicators -->
@@ -103,7 +80,6 @@
       <li data-target="#myCarousel" data-slide-to="5"></li>
       <li data-target="#myCarousel" data-slide-to="6"></li>
       <li data-target="#myCarousel" data-slide-to="7"></li>
-      <li data-target="#myCarousel" data-slide-to="8"></li>
     </ol>
 
     <div class="carousel-inner" role="listbox">
@@ -117,7 +93,7 @@
       <div class="item">
         <img src="2.JPG" alt="Image 2" class="carousel-image">
         <div class="carousel-caption">
-           <button class="button" onclick="openPopup(2)">Más información</button>
+          <button class="button" onclick="openPopup(2)">Más información</button>
         </div>
       </div>
       <div class="item">
@@ -129,7 +105,7 @@
       <div class="item">
         <img src="4.JPG" alt="Image 4" class="carousel-image">
         <div class="carousel-caption">
-         <button class="button" onclick="openPopup(4)">Más información</button>
+          <button class="button" onclick="openPopup(4)">Más información</button>
         </div>
       </div>
       <div class="item">
@@ -180,7 +156,7 @@
     <p>&copy; 2023 Museo Comunitario Ta Guil Reiñ de Santiago Matatlán | Todos los derechos reservados</p>
   </footer>
 
-  <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
     <script>
@@ -192,19 +168,19 @@
       var title, description, audioFile;
       switch (id) {
         case 1:
-          title = "EL MEZCAL EN LA CURACIÓN DEL ESPANTO";
-          description = "Se va al lugar dónde se asustó la persona, o si no se acuerda, en la montaña, en la torre, donde viene el aire fuerte. Voy a bendecir el lugar con agua bendita, limpio el enfermo con que nos acompañan también lo limpian. Mato el pollo, donde se pollo, las personas queda después de brincar hacemos el hoyo, se pone la ofrenda con comida, que Dios está viendo, ya se ve que Dios le va a ayudar a sanar.";
-          audioFile = "Foto2-Sala1-SAV.mp3";
+          title = "Imagen 1";
+          description = "Descripción de la imagen 1.";
+          audioFile = "Foto1-Sala1-SAV.mp3";
           break;
         case 2:
+          title = "Imagen 2";
+          description = "Descripción de la imagen 2.";
+          audioFile = "Foto2-Sala1-SAV.mp3";
+          break;
+        case 3:
           title = "Imagen 3";
           description = "Descripción de la imagen 3.";
           audioFile = "Foto3-Sala1-SAV.mp3";
-          break;
-        case 3:
-          title = "PEDIDA DE LA NOVIA";
-          description = "El mezcal es fundamental para la vida económica y ceremonial de Santiago Matatlán. Gran parte de nosotros vivimos de su producción, pero además está presente en la pedida de la novia, bodas, bautizos, día de muertos y mayordomías. Desde tiempos ancestrales, ha significado convivencia y comunión con nuestros semejantes y nuestros muertos. Permite curar y consagrar. El mezcal es sagrado como ofrenda para pedir por nuestro bienestar y agradecer los frutos de la tierra.";
-          audioFile = "Audio1.mp3";
           break;
         case 4:
           title = "Imagen 4";
@@ -212,23 +188,23 @@
           audioFile = "audio4.mp3";
           break;
         case 5:
-          title = "MOLIENDA";
-          description = "En el molino tradicional un caballo o mula hace girar una rueda de piedra alrededor de una base circular, machucando las piñas cocidas. El maguey suelta su jugo y queda mezclado con la fibra, convirtiéndose en mosto.";
+          title = "Imagen 5";
+          description = "Descripción de la imagen 5.";
           audioFile = "audio5.mp3";
           break;
         case 6:
-          title = "CULTIVO DEL MAGUEY";
-          description = "Anteriormente se utilizaban distintos tipos de maguey para producir mezcal, incluyendo el cirial, el arroqueño y el espadín, aunque el espadín es el que se cultiva casi exclusivamente hoy en día. El maguey tobalá es una variedad silvestre que da un mezcal de alta calidad.";
+          title = "Imagen 6";
+          description = "Descripción de la imagen 6.";
           audioFile = "audio6.mp3";
           break;
         case 7:
-          title = "MADURACIÓN Y ENVASADO";
-          description = "El mezcal blanco o minero sale al mercado antes, mientras el reposado deberá dejarse por lo menos 2 meses y añejo deberá madurarse durante por lo menos un año, de acuerdo a la normatividad vigente. La graduación de alcohol debe ser entre los 40 y 48 grados. Muchos productores no envasan su producción, sino que venden su mezcal a granel. Los que cuentan con marcas registradas realizan el envasado y cubren el impuesto correspondiente.";
+          title = "Imagen 7";
+          description = "Descripción de la imagen 7.";
           audioFile = "audio7.mp3";
           break;
         case 8:
-          title = "HORNEADO";
-          description = "El horno tradicional consiste en un gran pozo hecho en la tierra, que se calienta poniendo fuego a una tonelada de leña gruesa. Encima se colocan piedras especiales para lumbre conocidos en zapoteco como "guibh-ruuh". Cuando se calientan al rojo vivo se ponen encima los trozos de la piña del maguey, se tapa con un petate o lona y se cubre con tierra. Dos toneladas de maguey duran alrededor de 4 a 5 días en cocerse. El vapor generado por el líquido del maguey va ayudando al cocimiento y a que las piñas adquieran su mayor dulzura, tomando también los sabores de la tierra, la madera y el humo.";
+          title = "Imagen 8";
+          description = "Descripción de la imagen 8.";
           audioFile = "audio8.mp3";
           break;
       }
